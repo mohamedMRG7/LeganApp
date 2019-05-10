@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="leganEmpsView.jsf" id="d1">
+        <af:form id="f1">
+            <af:panelGridLayout id="pgl1">
+                <af:gridRow marginTop="5px" height="60px" id="gr1">
+                    <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc1" halign="center"
+                                 valign="middle">
+                        <af:link text="Show meetings" id="pt_l2" inlineStyle="font-size:large;" iconPosition="top"
+                                 action="showMeeting" icon="#{resource['images:slide.png']}"/>
+                        <af:spacer width="10" height="10" id="pt_s1"/>
+                        <af:link text="Add meeting" id="pt_l3" inlineStyle="font-size:large;" iconPosition="top"
+                                 action="addMeeting" icon="#{resource['images:meeting-room.png']}"/>
+                    </af:gridCell>
+                </af:gridRow>
+                <af:gridRow marginTop="5px" height="100%" marginBottom="5px" id="gr2">
+                    <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc2" halign="center">
+                        <af:panelStretchLayout id="psl1" dimensionsFrom="parent">
+                            <f:facet name="center"/>
+                        </af:panelStretchLayout>
+                    </af:gridCell>
+                </af:gridRow>
+            </af:panelGridLayout>
+        </af:form>
+    </af:document>
+</f:view>

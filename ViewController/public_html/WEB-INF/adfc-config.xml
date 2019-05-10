@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <view id="leganEmpsView">
+    <page>/leganEmployeesPages/leganEmpsView.jsf</page>
+  </view>
+  <view id="showMeetingsView">
+    <page>/MeetingPages/showMeetingsView.jsf</page>
+  </view>
+  <view id="AddMeetingView">
+    <page>/MeetingPages/AddMeetingView.jsf</page>
+  </view>
+  <control-flow-rule id="__15">
+    <from-activity-id>*</from-activity-id>
+    <control-flow-case id="__16">
+      <from-outcome>back</from-outcome>
+      <to-activity-id>leganEmpsView</to-activity-id>
+    </control-flow-case>
+    <control-flow-case id="__17">
+      <from-outcome>showMeeting</from-outcome>
+      <to-activity-id>showMeetingsView</to-activity-id>
+    </control-flow-case>
+    <control-flow-case id="__18">
+      <from-outcome>addMeeting</from-outcome>
+      <to-activity-id>AddMeetingView</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <managed-bean id="__10">
+    <managed-bean-name>MainBean</managed-bean-name>
+    <managed-bean-class>view.MainBean</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+  </managed-bean>
+</adfc-config>

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/**ADFFaces_Skin_File / DO NOT REMOVE**/
+@namespace af "http://xmlns.oracle.com/adf/faces/rich";
+@namespace dvt "http://xmlns.oracle.com/dss/adf/faces";
+
+af|panelGridLayout
+{
+background-color:White; margin-bottom:15px; margin-left:15px; margin-right:15px; margin-top:15px; border-bottom-left-radius:15px 15px; border-bottom-right-radius:15px 15px; border-top-left-radius:15px 15px; border-top-right-radius:15px;
+}
+
+af|document
+{
+background-color: Highlight;
+}
+
+af|column::column-header-cell-content {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3f5c9a;
+    padding: 3px;
+}
+
+af|column::data-cell {
+    color: black;
+    background-color: #aad8ef;
+}
+
+af|selectOneChoice::label {
+    font-weight: bold;
+}
+
+af|inputDate::label {
+    font-weight: bold;
+}
+
+af|inputListOfValues::label {
+    font-weight: bold;
+}
+
+
+af|inputText::label {
+    font-weight: bold;
+}
